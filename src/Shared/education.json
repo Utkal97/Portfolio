@@ -1,0 +1,25 @@
+[
+    {
+        "level" : "Bachelors",
+        "institute" : "Indian Institute of Information Technology Sri City",
+        "major" : "Computer Science and Engineering",
+        "score" : "8.24/10.0",
+        "featured" : true
+    },
+    {
+        "level" : "XII Standard",
+        "institute" : "SKVS Kalasala, Vijayawada",
+        "major" : "Maths, Physics and Chemistry",
+        "board" : "BIEAP",
+        "score" : "96.4%",
+        "featured" : false
+    },
+    {
+        "level" : "X Standard",
+        "institute" : "KKR Gowtham International",
+        "major" : "General Subjects",
+        "board" : "CBSE",
+        "score" : "10.0/10.0",
+        "featured" : false
+    }
+]

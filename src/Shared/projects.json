@@ -1,0 +1,35 @@
+[
+    {
+        "name" : "Car Rental Service",
+        "desciption" : "An API service built for car rental system using Nodejs, MongoDB (Atlas cloud) and Expressjs. The server is currently deployed on Heroku.",
+        "link_to_app" : "",
+        "link_to_source_code" : "https://github.com/Utkal97/car-rental-service",
+        "thumbnail" : "",
+        "featured" : true
+    },
+    {
+        "name" : "Dictionary",
+        "desciption" : "An English Dictionary application built as a client-server application. The server is built with Nodejs, MongoDB cloud and Expressjs hosted on Heroku, whereas the client is a CLI tool built with Commanderjs",
+        "link_to_app" : "",
+        "link_to_source_code" : "https://github.com/Utkal97/Dictionary-Backend",
+        "link_to_client_source_code" : "https://github.com/Utkal97/Dictionary-CLI",
+        "thumbnail" : "",
+        "featured" : true
+    },
+    {
+        "name" : "Industry Cooling Automation",
+        "desciption" : "An IoT project developed to enable automation of cooling system in manufacturing industry.",
+        "link_to_app" : null,
+        "link_to_source_code" : "https://github.com/Utkal97/Industry-Cooling-Automation",
+        "thumbnail" : null,
+        "featured" : true
+    },
+    {
+        "name" : "Academic Suite",
+        "desciption" : "A web application built for academic institutions for maintaining useful academic resources and sharing them with students. The whole system is based on client-server architecture and once deployed, it doesn't require internet connectivity.",
+        "link_to_app" : null,
+        "link_to_source_code" : null,
+        "thumbnail" : null,
+        "featured" : false
+    }
+]

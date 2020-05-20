@@ -7,7 +7,7 @@ import Main from './Components/MainComponent';
 function App() {
     return (
         <BrowserRouter>
-            <div className="App">
+            <div className="App container-fluid">
                 <Main />
             </div>
         </BrowserRouter>

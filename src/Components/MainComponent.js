@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
 
-import Header from './HeaderComponent';
+import SideNavbar from './SideNavbarComponent';
 import Home from './HomeComponent';
 import Projects from './ProjectsComponent';
 import Skills from './SkillsComponent';
@@ -18,7 +18,8 @@ class Main extends Component {
             skills : require('../Shared/skills.json'),
             pos : require('../Shared/positionsOfResponsibility.json'),
             education : require('../Shared/education.json'),
-            profiles : require('../Shared/profiles.json')
+            profiles : require('../Shared/profiles.json'),
+            resume : require('../Shared/Resume.pdf')
         };
     }
 
@@ -31,23 +32,30 @@ class Main extends Component {
                     pos = { this.state.pos }
                     education = { this.state.education.filter((level) => level.featured)}
                     profiles = { this.state.profiles }
+                    resume = { this.state.resume }
                 />
             );
-        }
+        };
 
         return (
-            <React.Fragment>
-                <Header />
-                <Switch >
-                    <Route path="/home" component={HomePage} />
-                    <Route path="/projects" component={() => <Projects projects={this.state.projects}/> } />
-                    <Route path="/skills" component={() => <Skills skills={this.state.skills}/> } />
-                    <Route path="/education" component={() => <Education education={this.state.education}/> } />
-                    <Route path="/POS" component={() => <POS pos={this.state.pos}/> } />
-                    <Route path="/profiles" component={() => <Profiles profiles={this.state.profiles} />} />
-                    <Redirect to="/home" />
-                </Switch>
-            </React.Fragment>
+            <div className="row">
+
+                    <div className="sidenav">
+                        <SideNavbar resume={this.state.resume} />
+                    </div>
+
+                    <main id="main" >
+                        <Switch >
+                            <Route path="/home" component={HomePage} />
+                            <Route path="/projects" component={() => <Projects projects={this.state.projects}/> } />
+                            <Route path="/skills" component={() => <Skills skills={this.state.skills}/> } />
+                            <Route path="/education" component={() => <Education education={this.state.education}/> } />
+                            <Route path="/POS" component={() => <POS pos={this.state.pos}/> } />
+                            <Route path="/profiles" component={() => <Profiles profiles={this.state.profiles} />} />
+                            <Redirect to="/home" />
+                        </Switch>
+                    </main>
+            </div>
         );
     }
 }

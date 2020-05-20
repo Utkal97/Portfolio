@@ -15,7 +15,7 @@ function Education({education}) {
     });
 
     return (
-        <div className="container">
+        <div className="card home-card">
             <Table>
                 <thead>
                     <tr>

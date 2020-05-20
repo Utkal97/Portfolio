@@ -1,15 +1,15 @@
 import React from "react";
-import { Media } from 'reactstrap';
 
 function RenderProject({project}) {
     return (
-        <Media key={project.name}>
-            <Media body>
-                <Media heading>{project.name}</Media>
-                {project.desciption} <br />
-                <a href={project.link_to_source_code} >Link to Source Code</a>
-            </Media>
-        </Media>
+        <div key={project.name} className="card project-card col-sm-10">
+            <div className="card-body">
+                <h5 className="card-title">{project.name}</h5>
+                <h6 className="card-subtitle">{project.tech_stack}</h6>
+                <p className="card-text">{project.desciption}</p>
+                <a href={project.link_to_source_code} className="card-link" >Link to Source Code</a>
+            </div>
+        </div>
     );
 }
 
@@ -24,9 +24,9 @@ function Projects({projects}) {
     });
 
     return (
-        <div className="container">
+        <React.Fragment>
             {project_list}
-        </div>
+        </React.Fragment>
     );
 }
 

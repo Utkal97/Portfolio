@@ -17,50 +17,37 @@ class Header extends Component {
             isNavOpen : !(this.state.isNavOpen)
         });
     }
-    
+
     render() {
         return (
-            <React.Fragment>
-                <Navbar dark expand="md">
-                    <div className= "container">
-                        <NavbarToggler onClick={this.toggleNav} />
+            <Navbar expand="md">
 
-                        <NavbarBrand className="mr-auto" href ="/">
-                            Utkal's Profile
-                        </NavbarBrand>
+                <NavbarToggler onClick={this.toggleNav} />
+                    
+                <NavbarBrand className="mr-auto" href ="/">Home</NavbarBrand>
 
-                        <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                <Collapse isOpen={this.state.isNavOpen} navbar>
+                    <Nav navbar >
 
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/projects">
-                                        <span className="fa fa-home fa-lg"></span> Projects
-                                    </NavLink>
-                                </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link" to="/projects">Projects</NavLink>
+                        </NavItem>
 
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/education">
-                                        <span className="fa fa-address-card fa-lg"></span> Education
-                                    </NavLink>
-                                </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link" to="/education"> Education</NavLink>
+                        </NavItem>
 
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/skills">
-                                        <span className="fa fa-info fa-lg"></span> Skills
-                                    </NavLink>
-                                </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link" to="/skills">Skills</NavLink>
+                        </NavItem>
 
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/POS">
-                                        <span className="fa fa-list fa-lg"></span> Positions of Responsibility
-                                    </NavLink>
-                                </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link" to="/POS">Positions of Responsibility</NavLink>
+                        </NavItem>
 
-                            </Nav>
-                        </Collapse>
-                    </div>
-                </Navbar>
-            </React.Fragment>
+                    </Nav>
+                </Collapse>
+            </Navbar>
         );
     }
 }

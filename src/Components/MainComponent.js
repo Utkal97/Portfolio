@@ -8,6 +8,7 @@ import Skills from './SkillsComponent';
 import Education from './EducationComponent';
 import POS from './POSComponent';
 import Profiles from './ProfilesComponent';
+import NotFound from './NotFoundComponent';
 
 class Main extends Component {
 
@@ -52,6 +53,7 @@ class Main extends Component {
                             <Route path="/education" component={() => <Education education={this.state.education}/> } />
                             <Route path="/POS" component={() => <POS pos={this.state.pos}/> } />
                             <Route path="/profiles" component={() => <Profiles profiles={this.state.profiles} />} />
+                            <Route path="/notfound" component={NotFound} />
                             <Redirect to="/home" />
                         </Switch>
                     </main>

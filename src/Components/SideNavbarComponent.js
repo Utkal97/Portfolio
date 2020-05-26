@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { Navbar, Nav, NavItem } from 'reactstrap';
+import React, { Component } from 'react';
+import { Navbar, Nav, NavItem, NavbarToggler, Collapse } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import Resume from './ResumeComponent';
 
@@ -21,33 +21,39 @@ class SideNavbar extends Component {
 
     render() {
         return (
-            <Navbar >
-                <Nav navbar>
+            <Navbar expand="md">
+                <NavbarToggler onClick={this.toggleNav} >
+                    <img src="/images/menu.svg" height="30px" width="40px" alt="toggle menu"/>
+                    </NavbarToggler>
+                <Collapse isOpen={this.state.isNavOpen} navbar>
+                    <Nav navbar>
 
-                    <NavItem>
-                        <NavLink to="/home"> Home </NavLink>
-                    </NavItem>
-                    
-                    <NavItem>
-                        <NavLink to="/projects"> Projects </NavLink>
-                    </NavItem>
+                        <NavItem>
+                            <NavLink to="/home"> Home </NavLink>
+                        </NavItem>
+                        
+                        <NavItem>
+                            <NavLink to="/projects"> Projects </NavLink>
+                        </NavItem>
 
-                    <NavItem>
-                        <NavLink to="/education"> Education </NavLink>
-                    </NavItem>
+                        <NavItem>
+                            <NavLink to="/education"> Education </NavLink>
+                        </NavItem>
 
-                    <NavItem>
-                        <NavLink to="/skills"> Skills </NavLink>
-                    </NavItem>
+                        <NavItem>
+                            <NavLink to="/skills"> Skills </NavLink>
+                        </NavItem>
 
-                    <NavItem>
-                        <NavLink to="/POS"> Positions of Responsibility </NavLink>
-                    </NavItem>
+                        <NavItem>
+                            <NavLink to="/POS"> Positions of Responsibility </NavLink>
+                        </NavItem>
 
-                </Nav>
-                <button className="btn btn-primary" id="get-resume-button">
-                    <Resume resume={this.props.resume}/>
-                </button>
+                        <button className="btn btn-primary" id="get-resume-button">
+                            <Resume resume={this.props.resume}/>
+                        </button>
+                    </Nav>
+                </Collapse>
+                
             </Navbar>
         );
     }

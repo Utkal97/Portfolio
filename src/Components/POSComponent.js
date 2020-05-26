@@ -10,11 +10,11 @@ function POS({pos}) {
     });
 
     return (
-        <div className="container">
-            <ListGroup>
+        <React.Fragment>
+            <ListGroup className="pos">
                 {list}
             </ListGroup>
-        </div>
+        </React.Fragment>
     );
 }
 

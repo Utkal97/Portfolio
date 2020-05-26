@@ -1,15 +1,14 @@
 import React from 'react';
-import {Route, Redirect} from 'react-router-dom';
-import {Button} from 'reactstrap';
 
 function NotFound(props) {
     console.log("Not found triggered.");
     return (
-        <React.Fragment>
-            
+        <div className="container">
             <img src="images/not_found.png" alt="404 not found" />
-            <Button onClick={ () => <Redirect to="/home" /> } > Go Home </Button>
-        </React.Fragment>
+            <p>
+                The page you have requested for is not present. Please go Home.
+            </p>
+        </div>
     );
 }
 

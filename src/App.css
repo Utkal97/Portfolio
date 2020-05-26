@@ -1,43 +1,55 @@
+#root {
+    height: 100%;
+}
+
+.App {
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
 
 .sidenav {
   height: auto;
-  position: fixed;
   z-index: 1;
   left: 0;
-  background-color: #1e3d59;
+  top: 0;
+  background-color: #373888;
   overflow-x: hidden;
   overflow-y: auto;
-  padding-top: 20px;
-  width: 200px;
-  top: 0;
+  width: 100%;
   bottom: 0;
 }
 
 .sidenav a {
   text-decoration: none;
   font-size: 19px;
-  color: #dddddd;
+  color: wheat;
   display: block;
   margin: 3px;
-  border-bottom: solid gray; 
 }
 
 .sidenav a:hover {
-  color: #ffc13b;
+  color: #342f50;
 }
 
 #main {
-    background-color: #efe1b9;
-    left: 200px;
+    color: black;
     height: 100%;
-    position: absolute;
+    width: 100%;
+    position: relative;
     overflow: auto;
-    right: 0px;
+
 }
 
 .home-card {
-    margin: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
     overflow: auto;
+    background: transparent;
 }
 
 .project-card {
@@ -45,11 +57,70 @@
     margin-bottom: 1%;
     margin-left: 10%;
     overflow: auto;
-    background-color: #1e3d59;
+
+    /* Gradient property for all browsers */ 
+    background: #866bff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #866bff 0%, #7658fc 0%, #c906d3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #866bff 0%,#7658fc 0%,#c906d3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #866bff 0%,#7658fc 0%,#c906d3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#866bff', endColorstr='#c906d3',GradientType=0 ); /* IE6-9 */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     color: #ffffff;
     font-size: 20px;
 }
 
+.project-card a {
+    color: skyblue;
+}
+
+.pos {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e7dee948;
+}
+
 #get-resume-button {
-    padding: 1%;
+    padding: 0%;
+    color: wheat;
+}
+
+@media only screen and (min-width: 720px) {
+    
+    .sidenav {
+        height: auto;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        background-color: #1e3d59;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 200px;
+        top: 0;
+        bottom: 0;
+      }
+      
+    .sidenav a {
+        text-decoration: none;
+        font-size: 19px;
+        color: #dddddd;
+        display: block;
+        margin: 3px;
+        border-bottom: solid gray; 
+    }
+
+    #main {
+        background-color: white;
+        left: 200px;
+        height: 100%;
+        width: auto;
+        position: absolute;
+        overflow: auto;
+        right: 0px;
+    }
+    
+    .navbar-nav {
+        display: block;
+    }
 }

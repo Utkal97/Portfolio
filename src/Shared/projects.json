@@ -2,7 +2,7 @@
     {
         "name" : "Car Rental Service",
         "desciption" : "An API service built for car rental system using Nodejs, MongoDB (Atlas cloud) and Expressjs. The server is currently deployed on Heroku.",
-        "link_to_app" : "",
+        "link_to_app" : "https://damian-car-rental-service.herokuapp.com/",
         "link_to_source_code" : "https://github.com/Utkal97/car-rental-service",
         "thumbnail" : "",
         "featured" : true
@@ -10,7 +10,7 @@
     {
         "name" : "Dictionary",
         "desciption" : "An English Dictionary application built as a client-server application. The server is built with Nodejs, MongoDB cloud and Expressjs hosted on Heroku, whereas the client is a CLI tool built with Commanderjs",
-        "link_to_app" : "",
+        "link_to_app" : "https://dictionarycli.herokuapp.com/",
         "link_to_source_code" : "https://github.com/Utkal97/Dictionary-Backend",
         "link_to_client_source_code" : "https://github.com/Utkal97/Dictionary-CLI",
         "thumbnail" : "",

@@ -2,7 +2,6 @@ import React from 'react';
 
 import Projects from './ProjectsComponent';
 import Skills from './SkillsComponent';
-import Education from './EducationComponent';
 import POS from './POSComponent';
 import Profiles from './ProfilesComponent';
 
@@ -12,13 +11,6 @@ function Home(props) {
     return (
         <React.Fragment>
             
-            <div className="card home-card col-sm-10">
-                <div className="card-body">
-                    <h5 className="card-title">Education</h5>
-                    <Education education={props.education} />
-                </div>
-            </div>
-
             <div className="card home-card col-sm-10">
                 <div className="card-body">        
                     <h5 className="card-title">Projects</h5>            

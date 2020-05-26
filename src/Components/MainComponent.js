@@ -41,22 +41,22 @@ class Main extends Component {
         return (
             <div className="row">
 
-                    <div className="sidenav">
-                        <SideNavbar resume={this.state.resume} />
-                    </div>
+                <aside className="sidenav">
+                    <SideNavbar resume={this.state.resume} />
+                </aside>
 
-                    <main id="main" >
-                        <Switch >
-                            <Route path="/home" component={HomePage} />
-                            <Route path="/projects" component={() => <Projects projects={this.state.projects}/> } />
-                            <Route path="/skills" component={() => <Skills skills={this.state.skills}/> } />
-                            <Route path="/education" component={() => <Education education={this.state.education}/> } />
-                            <Route path="/POS" component={() => <POS pos={this.state.pos}/> } />
-                            <Route path="/profiles" component={() => <Profiles profiles={this.state.profiles} />} />
-                            <Route path="/notfound" component={NotFound} />
-                            <Redirect to="/home" />
-                        </Switch>
-                    </main>
+                <main id="main" >
+                    <Switch >
+                        <Route path="/home" component={HomePage} />
+                        <Route path="/projects" component={() => <Projects projects={this.state.projects}/> } />
+                        <Route path="/skills" component={() => <Skills skills={this.state.skills}/> } />
+                        <Route path="/education" component={() => <Education education={this.state.education}/> } />
+                        <Route path="/POS" component={() => <POS pos={this.state.pos}/> } />
+                        <Route path="/profiles" component={() => <Profiles profiles={this.state.profiles} />} />
+                        <Route path="/notfound" component={NotFound} />
+                        <Redirect to="/home" />
+                    </Switch>
+                </main>
             </div>
         );
     }

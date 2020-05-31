@@ -25,7 +25,7 @@ function Profiles({profiles}) {
 
     return (
         <div className="container">
-            <Table>
+            <Table borderless>
                 <tbody>
                     {profile_list}
                 </tbody>

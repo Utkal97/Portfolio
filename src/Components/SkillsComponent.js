@@ -5,7 +5,7 @@ function RenderRow({list}) {
     
     return list.map((element) => {
         return(
-                <Button key={element} color="info ml-1">{element}</Button>
+            <Button key={element} color="info ml-1">{element}</Button>
         );
     });
 }
@@ -25,13 +25,11 @@ function Skills({skills}) {
     }
 
     return (
-        <div className="container">
-            <Table>
-                <tbody>
-                    {skill_list}
-                </tbody>
-            </Table>
-        </div>
+        <Table borderless className="">
+            <tbody>
+                {skill_list}
+            </tbody>
+        </Table>
     );
 }
 

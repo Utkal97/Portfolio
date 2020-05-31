@@ -1,44 +1,18 @@
 import React from 'react';
 
-import Projects from './ProjectsComponent';
-import Skills from './SkillsComponent';
-import POS from './POSComponent';
-import Profiles from './ProfilesComponent';
-
-
 function Home(props) {
 
     return (
-        <React.Fragment>
-            
-            <div className="card home-card col-sm-10">
-                <div className="card-body">        
-                    <h5 className="card-title">Projects</h5>            
-                    <Projects projects={props.projects} />
-                </div>
-            </div>
-            
-            <div className="card home-card col-sm-10">
-                <div className="card-body">
-                    <h5 className="card-title">Skills</h5>
-                    <Skills skills={props.skills} />                        
-                </div>
-            </div>
-
-            <div className="card home-card col-sm-10">
-                <div className="card-body">
-                    <h5 className="card-title">Profiles</h5>
-                    <Profiles profiles={props.profiles} />                    
-                </div>
-            </div>
-
-            <div className="card home-card col-sm-10">
-                <div className="card-body">
-                    <h5 className="card-title">Positions of Responsibility</h5>
-                    <POS pos={props.pos} />
-                </div>
-            </div>
-        </React.Fragment>
+        <div id="home">
+            <h1 >Hello</h1>
+            <p >
+                I am  a computer science graduate interested in Backend Development. 
+                I am currently exploring Reactjs (This web site is built using react).
+                Most of the times, I use Nodejs, MongoDB and Expressjs for building APIs. 
+                But I do not constrain to this and would change to other stack based on the project requirement.
+                As you can see, I am not very good at CSS. I am open for suggestions to improve the aesthetics.
+            </p>
+        </div>
     );
 }
 

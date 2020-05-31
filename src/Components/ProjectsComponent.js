@@ -7,7 +7,17 @@ function RenderProject({project}) {
                 <h5 className="card-title">{project.name}</h5>
                 <h6 className="card-subtitle">{project.tech_stack}</h6>
                 <p className="card-text">{project.desciption}</p>
-                <a href={project.link_to_source_code} className="card-link" >Link to Source Code</a>
+
+                {
+                    project.link_to_source_code ? 
+                    <a href={project.link_to_source_code} className="card-link" >Link to Source Code</a> : null
+                }
+                
+                {
+                    project.link_to_app ? 
+                    <a href={project.link_to_app} className="card-link" >Link to Application</a> : null
+                }
+
             </div>
         </div>
     );

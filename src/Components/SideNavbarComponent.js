@@ -21,40 +21,42 @@ class SideNavbar extends Component {
 
     render() {
         return (
-            <Navbar expand="md">
-                <NavbarToggler onClick={this.toggleNav} >
-                    <img src="/images/menu.svg" height="30px" width="40px" alt="toggle menu"/>
+            <React.Fragment >
+                <h3 id="name" > Utkal </h3>
+                <Navbar expand="md">
+
+                    <NavbarToggler onClick={this.toggleNav} >
+                        <img src="/images/menu.svg" height="30px" width="40px" alt="toggle menu"/>
                     </NavbarToggler>
-                <Collapse isOpen={this.state.isNavOpen} navbar>
-                    <Nav navbar>
 
-                        <NavItem>
-                            <NavLink to="/home"> Home </NavLink>
-                        </NavItem>
-                        
-                        <NavItem>
-                            <NavLink to="/projects"> Projects </NavLink>
-                        </NavItem>
+                    <Collapse isOpen={this.state.isNavOpen} navbar>
+                        <Nav navbar>
 
-                        <NavItem>
-                            <NavLink to="/education"> Education </NavLink>
-                        </NavItem>
+                            <NavItem>
+                                <NavLink to="/home"> Home </NavLink>
+                            </NavItem>
+                            
+                            <NavItem>
+                                <NavLink to="/projects"> Projects </NavLink>
+                            </NavItem>
 
-                        <NavItem>
-                            <NavLink to="/skills"> Skills </NavLink>
-                        </NavItem>
+                            <NavItem>
+                                <NavLink to="/skills"> Skills </NavLink>
+                            </NavItem>
 
-                        <NavItem>
-                            <NavLink to="/POS"> Positions of Responsibility </NavLink>
-                        </NavItem>
+                            <NavItem>
+                                <NavLink to="/profiles"> Profiles </NavLink>
+                            </NavItem>
 
-                        <button className="btn btn-primary" id="get-resume-button">
-                            <Resume resume={this.props.resume}/>
-                        </button>
-                    </Nav>
-                </Collapse>
-                
-            </Navbar>
+                            <button type="button" class="btn btn-dark" id="get-resume-button">
+                                <Resume resume={this.props.resume}/>
+                            </button>
+
+                        </Nav>
+
+                    </Collapse>
+                </Navbar>
+            </React.Fragment>
         );
     }
 }

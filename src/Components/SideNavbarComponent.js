@@ -48,7 +48,7 @@ class SideNavbar extends Component {
                                 <NavLink to="/profiles"> Profiles </NavLink>
                             </NavItem>
 
-                            <button type="button" class="btn btn-dark" id="get-resume-button">
+                            <button type="button" class="btn btn-light" id="get-resume-button">
                                 <Resume resume={this.props.resume}/>
                             </button>
 

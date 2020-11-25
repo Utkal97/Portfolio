@@ -1,5 +1,12 @@
 [
     {
+        "name" : "Geometric Processing",
+        "desciption" : "My work on 3D mesh processing. Given a 3D mesh in a Half Edge data structure, apply Laplacion smoothing in order to smoothen or sharpen the image.",
+        "link_to_app" : null,
+        "link_to_source_code": "https://github.com/Utkal97/geometric-processing",
+        "thumbnail" : null
+    },
+    {
         "name" : "Car Rental Service",
         "desciption" : "An API service built for car rental system using Nodejs, MongoDB (Atlas cloud) and Expressjs. The server is currently deployed on Heroku.",
         "link_to_app" : "https://damian-car-rental-service.herokuapp.com/",

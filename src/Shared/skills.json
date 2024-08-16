@@ -1,7 +1,0 @@
-{
-    "Language" : ["C++", "Javascript", "Python3"],
-    "Backend" : ["Nodejs"],
-    "Frontend" : ["Reactjs"],
-    "Database" : ["MongoDB", "MySQL"],
-    "OS" : ["Ubuntu", "Windows"]
-}

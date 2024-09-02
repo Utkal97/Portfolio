@@ -67,7 +67,12 @@ export default function DrawerAppBar(props: Props) {
               </Button>
             ))}
           </Box>
-          <Button variant='outlined'>
+          <Button
+            variant='outlined'
+            href='resume.pdf'
+            target='_blank'
+            rel="noopener noreferrer"
+          >
             Resume
           </Button>
         </Toolbar>

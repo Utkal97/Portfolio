@@ -1,7 +1,7 @@
 {
   "about": {
     "name": "Utkal Sirikonda",
-    "description": "I’m currently a working as an Intern at SS&C Technologies, while pursuing a master’s degree in Computer Science at Clemson University with 3 years of Full-stack development experience at Inncircles Arena. My professional experience lies in building applications in Javascript/Typescript and Python. I will be graduating in 2025 and I’m looking for an Internship/Co-op starting from Jan 2025, and Full time opportunities from June - Aug 2025."
+    "description": "I’m currently working as an Intern at SS&C Technologies, while pursuing a master’s degree in Computer Science at Clemson University with 3 years of Full-stack development experience at Inncircles Arena. My professional experience lies in building applications in Javascript/Typescript and Python. I will be graduating in 2025 and I’m looking for an Internship/Co-op starting from Jan 2025, and Full time opportunities from June - Aug 2025."
   },
   "skills": {
     "Languages": [
@@ -32,7 +32,8 @@
       "role": "Full-stack Developer Co-op",
       "organization": "SS&C Technologies",
       "location": "Massachussetts, United States (On-site)",
-      "technology": [
+      "duration": "June 2024 - Dec 2024",
+      "technologies": [
         "Typescript",
         "React",
         "Node.js",
@@ -51,7 +52,8 @@
       "role": "Team Lead (Software)",
       "organization": "Inncircles Arena",
       "location": "Hyderabad, India (On-site)",
-      "technology": [
+      "duration": "Jan 2022 - Aug 2023",
+      "technologies": [
         "Python",
         "Typescript",
         "React",
@@ -71,7 +73,8 @@
       "role": "Software Developer",
       "organization": "Inncircles Arena",
       "location": "Hyderabad, India (On-site)",
-      "technology": [
+      "duration": "Jan 2021 - Dec 2021",
+      "technologies": [
         "Javascript",
         "React",
         "Node.js",
@@ -91,12 +94,31 @@
       "list": [
         {
           "name": "AcadSuite",
-          "description": "A web application built for academic institutions for maintaining useful academic resources and sharing them with students. The professors/instructors can share useful material in any form (video, pdf, doc, etc.). The students can access (download) it from the application.The whole system is based on client-server architecture and doesn't require internet connectivity.The application is built with Django.",
+          "tech_stack": [
+            "Python",
+            "Django",
+            "REST API"
+          ],
+          "description": [
+            "A web application built for academic institutions for maintaining useful academic resources and sharing them with students.",
+            "The professors/instructors can share useful material in any form (video, pdf, doc, etc.).",
+            "The students can access (download) it from the application.",
+            "The whole system is based on client-server architecture and doesn't require internet connectivity."
+          ],
           "src_code": ""
         },
         {
           "name": "Car Rental API Service",
-          "description": "An API system developed for a car rental service built with Nodejs, Expressjs and MongoDB. The project is currently hosted on Heroku.",
+          "tech_stack": [
+            "Javascript",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+          ],
+          "description": [
+            "An API system developed for a car rental service built with Nodejs, Expressjs and MongoDB.",
+            "The project is currently hosted on Heroku."
+          ],
           "src_code": "https://github.com/Utkal97/car-rental-service"
         }
       ]
@@ -106,11 +128,27 @@
       "list": [
         {
           "name": "Ray Tracing",
-          "description": "Composed a Ray-Traced environment containing objects of different material properties. Programmed Area Lighting, Refraction, and Reflection phenomena into the environment. Implemented Bounding Box algorithm for efficiency, experiencing 40% reduced run-time compared to the naive rasterization approach."
+          "tech_stack": [
+            "C++",
+            "OpenGL"
+          ],
+          "description": [
+            "Composed a Ray-Traced environment containing objects of different material properties.",
+            "Programmed Area Lighting, Refraction, and Reflection phenomena into the environment.",
+            "Implemented Bounding Box algorithm for efficiency, experiencing 40% reduced run-time compared to the naive rasterization approach."
+          ]
         },
         {
           "name": "Surface of Revolution",
-          "description": "Rendered a pot by revolving a Quintic Bezier curve along the Y-axis for given control points. Accomplished Blinn-Phong shading by calculating vertex normals and involving specular light, diffuse shading in Fragment shader. Mapped 2-D Texture map onto Surface of Revolution by computing Texture coordinates and assigning them to Vertex Buffer (VBO)."
+          "tech_stack": [
+            "C++",
+            "Legacy OpenGL"
+          ],
+          "description": [
+            "Rendered a pot by revolving a Quintic Bezier curve along the Y-axis for given control points.",
+            "Accomplished Blinn-Phong shading by calculating vertex normals and involving specular light, diffuse shading in Fragment shader.",
+            "Mapped 2-D Texture map onto Surface of Revolution by computing Texture coordinates and assigning them to Vertex Buffer (VBO)."
+          ]
         }
       ]
     },
@@ -119,31 +157,57 @@
       "list": [
         {
           "name": "Search Engine",
-          "description": "Led a team of 3 peers in building a search engine based on Information Retrieval system concepts (Tokenization, TF-iDF, summarization, page-ranking) as a part of course team project. Input dataset comprised over 5000 HTML documents containing articles, blog entries, and links to external websites."
+          "tech_stack": [
+            "Python",
+            "HTML",
+            "CLI",
+            "Information Retrieval"
+          ],
+          "description": [
+            "Led a team of 3 peers in building a search engine based on Information Retrieval system concepts (Tokenization, TF-iDF, summarization, page-ranking) as a part of course team project.",
+            "Input dataset comprised over 5000 HTML documents containing articles, blog entries, and links to external websites."
+          ]
         },
         {
           "name": "Command Line Dictionary Tool",
-          "description": "A client-server Dictionary application developed using Nodejs, Expressjs and MongoDB Atlas. The server is deployed on Heroku. The client is a Command Line Interface built using Nodejs with Commanderjs, Axios modules. The data is extracted from server using REST APIs."
+          "tech_stack": [
+            "Node.js",
+            "Express.js",
+            "MongoDB Atlas"
+          ],
+          "description": [
+            "A client-server Dictionary application developed using Nodejs, Expressjs and MongoDB Atlas.",
+            "The server is deployed on Heroku. The client is a Command Line Interface built using Nodejs with Commanderjs, Axios modules.",
+            "The data is extracted from server using REST APIs."
+          ]
         },
         {
           "name": "Farm Helper",
-          "description": "A user friendly Web portal built to be used by Farmers using Visualization concepts. The farmers can view their farms (including what all crops they have sown till date), their assets(like cattle), etc. The farmers can also see which crops are in demand (using graphs) and read some articles about how other farmers have succeeded in farming."
+          "tech_stack": [
+            "Python",
+            "Django"
+          ],
+          "description": [
+            "A user friendly Web portal built to be used by Farmers using Visualization concepts.",
+            "The farmers can view their farms (including what all crops they have sown till date), their assets(like cattle), etc.",
+            "The farmers can also see which crops are in demand (using graphs) and read some articles about how other farmers have succeeded in farming."
+          ]
         }
       ]
     }
   ],
   "hobbies": [
     {
-      "title": "Skydiving - USPA A-License",
-      "description": "Working on getting my A-License in Accelerated Free Fall Skydiving. I have done my First Solo Jump on Aug 24, 2024 from 3500ft above from an N2281G.",
+      "title": "Skydiving USPA A-License",
+      "description": "Working on getting my A-License in Accelerated Free Fall Skydiving. I have done my First Solo Jump on Aug 24, 2024 from 3500ft above sea-level from an N2281G.",
       "image_path": ""
     }
   ],
   "contact": {
-    "email": [
-      "usiriko@clemson.edu",
-      "utkal.s15@iiits.in"
-    ],
+    "email": {
+      "primary": "mailto:usiriko@clemson.edu",
+      "secondary": "mailto:utkal.s15@iiits.in"
+    },
     "phone": "+1 (864)765-8134",
     "Instagram": {
       "icon": "",
@@ -153,7 +217,7 @@
     "GitHub": {
       "icon": "",
       "user_tag": "Utkal97",
-      "link": ""
+      "link": "https://github.com/Utkal97"
     },
     "LinkedIn": {
       "icon": "",
@@ -163,7 +227,7 @@
     "Dev.to": {
       "icon": "",
       "user_tag": "Utkal97",
-      "link": ""
+      "link": "https://dev.to/Utkal97"
     }
   }
 }

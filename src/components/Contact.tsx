@@ -4,10 +4,38 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode'; // Substitute for DEV.to icon
 
-export default function Contact() {
+interface ProfileInfo {
+  icon: string;
+  user_tag: string;
+  link: string;
+};
+
+interface props {
+  email: {
+    primary: string;
+    secondary: string;
+  };
+  phone: string;
+  github: ProfileInfo;
+  linkedin: ProfileInfo;
+  devto: ProfileInfo;
+  instagram: ProfileInfo;
+};
+
+const Contact: React.FC<props> = ({
+  email,
+  phone,
+  github,
+  linkedin,
+  devto,
+  instagram
+}) => {
+  const primaryMailText = (email?.primary?.split(':'))[1] || 'usiriko@clemson.edu';
+  const secondaryMailText = (email?.secondary?.split(':')[1]) || 'utkal.s15@iiits.in';
+
   return (
     <Box display="flex" justifyContent="center" alignItems="center" padding={2}>
-      {/* Left side with social media buttons */}
+
       <Stack spacing={2}>
         <Button
           variant="contained"
@@ -20,7 +48,7 @@ export default function Contact() {
             padding: '8px 16px',
             color: '#fff'
           }}
-          href="https://github.com/your-profile"
+          href={github.link}
           target="_blank"
         >
           GitHub
@@ -37,7 +65,7 @@ export default function Contact() {
             padding: '8px 16px',
             color: '#fff'
           }}
-          href="https://linkedin.com/in/your-profile"
+          href={linkedin.link}
           target="_blank"
         >
           LinkedIn
@@ -54,26 +82,27 @@ export default function Contact() {
             padding: '8px 16px',
             color: '#fff'
           }}
-          href="https://dev.to/your-profile"
+          href={devto.link}
           target="_blank"
         >
           DEV.to
         </Button>
       </Stack>
 
-      {/* Right side with contact details */}
       <Box marginLeft={4}>
         <Typography variant="h6" component="div">
           Contact Details -
         </Typography>
         <Typography variant="body1" component="div" marginTop={2}>
-          e-mail: <a href="mailto:usiriko@clemson.edu">usiriko@clemson.edu</a> /
-          <a href="mailto:utkal.s15@iiits.in">utkal.s15@iiits.in</a>
+          e-mail: <a href={email.primary}>{primaryMailText}</a>,
+          <a href={email.secondary}>{secondaryMailText}</a>
         </Typography>
         <Typography variant="body1" component="div" marginTop={1}>
-          phone: +1 (864) 765-134
+          phone: {phone}
         </Typography>
       </Box>
     </Box>
   );
 };
+
+export default Contact;

@@ -9,73 +9,76 @@ import {
   Grid2,
 } from '@mui/material';
 
-interface ProjectCardProps {
-  title: string;
-  techStack: string;
-  descriptions: string[];
-  repoLink: string;
+interface ProjectProps {
+  name: string;
+  tech_stack: string;
+  description: string[];
+  src_code: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, techStack, descriptions, repoLink }) => {
+const ProjectCard: React.FC<ProjectProps> = ({ name, tech_stack, description, src_code }) => {
   return (
     <Card sx={{ maxWidth: 345, backgroundColor: '#e0e0e0', borderRadius: '16px' }}>
       <Box sx={{ backgroundColor: '#000', color: '#fff', padding: 1, borderRadius: '16px 16px 0 0' }}>
         <Typography variant="h6" component="div">
-          {title}
+          {name}
         </Typography>
         <Typography variant="subtitle2" component="div">
-          Tech stack: {techStack}
+          Tech stack: {tech_stack}
         </Typography>
       </Box>
       <CardContent>
-        {descriptions.map((desc, index) => (
+        {description.map((desc, index) => (
           <Typography key={index} variant="body2" color="textSecondary">
             {desc}
           </Typography>
         ))}
       </CardContent>
-      <CardActions>
-        <Button
-          size="small"
-          href={repoLink}
-          target="_blank"
-          variant="contained"
-          sx={{ backgroundColor: '#a56eff', color: '#fff' }}
-        >
-          Link to Git Repo
-        </Button>
-      </CardActions>
+      {
+        src_code?.length &&
+        (<CardActions>
+          <Button
+            size="small"
+            href={src_code}
+            target="_blank"
+            variant="contained"
+            sx={{ backgroundColor: '#a56eff', color: '#fff' }}
+          >
+            Link to Git Repo
+          </Button>
+        </CardActions>)
+      }
+
     </Card>
   );
 };
 
 
-const projectData = [
-  {
-    title: 'Project Name 1',
-    techStack: 'JavaScript, React',
-    descriptions: ['Description 1', 'Description 2'],
-    repoLink: 'https://github.com/your-repo-1',
-  },
-  {
-    title: 'Project Name 2',
-    techStack: 'TypeScript, Node.js',
-    descriptions: ['Description 1', 'Description 2'],
-    repoLink: 'https://github.com/your-repo-2',
-  },
-];
+interface props {
+  projects: {
+    topic: string;
+    list: ProjectProps[];
+  }[]
+}
 
-export default function Projects() {
+const Projects: React.FC<props> = ({ projects }) => {
+
+  const projectData: ProjectProps[] = projects.reduce((accumulator: ProjectProps[], currentProjectGroup) => {
+    for (const project of currentProjectGroup.list) {
+      accumulator.push(project)
+    }
+    return accumulator;
+  }, [])
   return (
     <Box sx={{ padding: 4 }}>
       <Grid2 container spacing={4}>
         {projectData.map((project, index) => (
           <Grid2 key={index}>
             <ProjectCard
-              title={project.title}
-              techStack={project.techStack}
-              descriptions={project.descriptions}
-              repoLink={project.repoLink}
+              name={project.name}
+              tech_stack={project.tech_stack}
+              description={project.description}
+              src_code={project.src_code}
             />
           </Grid2>
         ))}
@@ -83,3 +86,5 @@ export default function Projects() {
     </Box>
   );
 };
+
+export default Projects;

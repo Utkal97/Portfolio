@@ -1,0 +1,169 @@
+{
+  "about": {
+    "name": "Utkal Sirikonda",
+    "description": "I’m currently a working as an Intern at SS&C Technologies, while pursuing a master’s degree in Computer Science at Clemson University with 3 years of Full-stack development experience at Inncircles Arena. My professional experience lies in building applications in Javascript/Typescript and Python. I will be graduating in 2025 and I’m looking for an Internship/Co-op starting from Jan 2025, and Full time opportunities from June - Aug 2025."
+  },
+  "skills": {
+    "Languages": [
+      "Javascript/Typescript",
+      "Python",
+      "C++"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express.js",
+      "Django"
+    ],
+    "Frontend": [
+      "React",
+      "HTML",
+      "CSS",
+      "Material",
+      "D3.js"
+    ],
+    "Others": [
+      "Docker",
+      "MongoDB",
+      "AWS"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Full-stack Developer Co-op",
+      "organization": "SS&C Technologies",
+      "location": "Massachussetts, United States (On-site)",
+      "technology": [
+        "Typescript",
+        "React",
+        "Node.js",
+        "OpenAPI Specification 3.0",
+        "Docker",
+        "Kubernetes"
+      ],
+      "description": [
+        "Decoupled a monolith application into micro-services. Containerized and deployed new micro-services with Docker, Kubernetes and Helm Chart.",
+        "Automated OpenAPI Specification (OAS 3.0) generation for Resourceful REST APIs.",
+        "Implemented Istio based Service Mesh for internal communication of micro-services.",
+        "Developed a new interface combining micro-frontends of React with Module Federation."
+      ]
+    },
+    {
+      "role": "Team Lead (Software)",
+      "organization": "Inncircles Arena",
+      "location": "Hyderabad, India (On-site)",
+      "technology": [
+        "Python",
+        "Typescript",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Redis",
+        "AWS"
+      ],
+      "description": [
+        "Enhanced and sustained an internal construction management application, developed using Node.js, Express.js, React, and MongoDB.",
+        "Improved system performance by redesigning data models. Run-time of APIs with new models reduced down from 400ms to 80ms.",
+        "Accelerated run-time calculation of business logic with Redis (caching) to fetch results instantaneously, bringing down response time to one tenth.",
+        "Communicated functional requirements and expectations taken from clients to a team of 4 software developers."
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "organization": "Inncircles Arena",
+      "location": "Hyderabad, India (On-site)",
+      "technology": [
+        "Javascript",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Data structures & Algorithms"
+      ],
+      "description": [
+        "Developed an auto-scheduling algorithm that works on 1.3M data points at the run-time. It can estimate completion time of a construction project (spanning 2-5 years) in advance.",
+        "Implemented product’s core functionality of automating work-orders, material procurement, and data analysis involving more than 1 million data-points.",
+        "Devised a file management service with AWS S3 to store visual work logs, replacing local file storage on server."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "topic": "Web Applications",
+      "list": [
+        {
+          "name": "AcadSuite",
+          "description": "A web application built for academic institutions for maintaining useful academic resources and sharing them with students. The professors/instructors can share useful material in any form (video, pdf, doc, etc.). The students can access (download) it from the application.The whole system is based on client-server architecture and doesn't require internet connectivity.The application is built with Django.",
+          "src_code": ""
+        },
+        {
+          "name": "Car Rental API Service",
+          "description": "An API system developed for a car rental service built with Nodejs, Expressjs and MongoDB. The project is currently hosted on Heroku.",
+          "src_code": "https://github.com/Utkal97/car-rental-service"
+        }
+      ]
+    },
+    {
+      "topic": "Computer Graphics",
+      "list": [
+        {
+          "name": "Ray Tracing",
+          "description": "Composed a Ray-Traced environment containing objects of different material properties. Programmed Area Lighting, Refraction, and Reflection phenomena into the environment. Implemented Bounding Box algorithm for efficiency, experiencing 40% reduced run-time compared to the naive rasterization approach."
+        },
+        {
+          "name": "Surface of Revolution",
+          "description": "Rendered a pot by revolving a Quintic Bezier curve along the Y-axis for given control points. Accomplished Blinn-Phong shading by calculating vertex normals and involving specular light, diffuse shading in Fragment shader. Mapped 2-D Texture map onto Surface of Revolution by computing Texture coordinates and assigning them to Vertex Buffer (VBO)."
+        }
+      ]
+    },
+    {
+      "topic": "Others",
+      "list": [
+        {
+          "name": "Search Engine",
+          "description": "Led a team of 3 peers in building a search engine based on Information Retrieval system concepts (Tokenization, TF-iDF, summarization, page-ranking) as a part of course team project. Input dataset comprised over 5000 HTML documents containing articles, blog entries, and links to external websites."
+        },
+        {
+          "name": "Command Line Dictionary Tool",
+          "description": "A client-server Dictionary application developed using Nodejs, Expressjs and MongoDB Atlas. The server is deployed on Heroku. The client is a Command Line Interface built using Nodejs with Commanderjs, Axios modules. The data is extracted from server using REST APIs."
+        },
+        {
+          "name": "Farm Helper",
+          "description": "A user friendly Web portal built to be used by Farmers using Visualization concepts. The farmers can view their farms (including what all crops they have sown till date), their assets(like cattle), etc. The farmers can also see which crops are in demand (using graphs) and read some articles about how other farmers have succeeded in farming."
+        }
+      ]
+    }
+  ],
+  "hobbies": [
+    {
+      "title": "Skydiving - USPA A-License",
+      "description": "Working on getting my A-License in Accelerated Free Fall Skydiving. I have done my First Solo Jump on Aug 24, 2024 from 3500ft above from an N2281G.",
+      "image_path": ""
+    }
+  ],
+  "contact": {
+    "email": [
+      "usiriko@clemson.edu",
+      "utkal.s15@iiits.in"
+    ],
+    "phone": "+1 (864)765-8134",
+    "Instagram": {
+      "icon": "",
+      "user_tag": "@utkal_sirikonda",
+      "link": "https://www.instagram.com/utkal_sirikonda/"
+    },
+    "GitHub": {
+      "icon": "",
+      "user_tag": "Utkal97",
+      "link": ""
+    },
+    "LinkedIn": {
+      "icon": "",
+      "user_tag": "Utkal Sirikonda",
+      "link": ""
+    },
+    "Dev.to": {
+      "icon": "",
+      "user_tag": "Utkal97",
+      "link": ""
+    }
+  }
+}

@@ -1,37 +1,36 @@
 import React from 'react';
-import { Box, Typography, IconButton } from '@mui/material';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { Box, Typography } from '@mui/material';
 
-const DescriptionBox = () => {
+interface props {
+  hobbies: {
+    title: string;
+    description: string;
+    image_path: string;
+  }[]
+}
+
+const DescriptionBox: React.FC<props> = ({ hobbies }) => {
   return (
     <Box display="flex" justifyContent="center" alignItems="center" padding={4} height="100vh">
-      {/* Left Arrow */}
-      <IconButton sx={{ color: 'lightgrey' }}>
-        <ArrowBackIosIcon fontSize="large" />
-      </IconButton>
-
-      {/* Description Box */}
-      <Box
-        width="600px"
-        bgcolor="#E0E0E0"
-        padding={3}
-        borderRadius="8px"
-        boxShadow={3}
-      >
-        <Typography variant="h6" component="div" fontWeight="bold">
-          Skydiving - USPA A License
-        </Typography>
-        <Typography variant="body1" component="div" marginTop={2}>
-          Trying to get my A - License in Accelerated Free Fall Skydiving.
-          I have done my First Solo Jump on Aug 24, 2024 from 3500ft above from an N2281G.
-        </Typography>
-      </Box>
-
-      {/* Right Arrow */}
-      <IconButton sx={{ color: 'lightgrey' }}>
-        <ArrowForwardIosIcon fontSize="large" />
-      </IconButton>
+      {hobbies.map((hobby, index) => {
+        return (
+          <Box
+            width="600px"
+            bgcolor="#E0E0E0"
+            padding={3}
+            borderRadius="8px"
+            boxShadow={3}
+            key={index}
+          >
+            <Typography variant="h6" component="div" fontWeight="bold">
+              {hobby.title}
+            </Typography>
+            <Typography variant="body1" component="div" marginTop={2}>
+              {hobby.description}
+            </Typography>
+          </Box>
+        )
+      })}
     </Box>
   );
 };
